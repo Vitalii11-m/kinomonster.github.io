@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}Фильмы{% endblock %}
+
+{% block menu %}
+
+	<ul class="nav nav-pills">
+                
+	    <li> <a href="/">Главная</a> </li>
+	    <li class="active"> <a href="/films">Фильмы</a> </li>
+	    <li> <a href="/sirials">Сериалы</a> </li>
+	    <li> <a href="/rating">Рейтинг фильмов</a> </li>
+	    <li> <a href="/contact">Контакты</a> </li>
+
+    </ul>
+
+{% endblock %}
+
+{% block content %}
+	        <div class="col-lg-9 col-lg-push-3"> <!-- Меняем блоки местами col-lg-push-3 -->
+
+            <form role="search" class="visible-xs">
+                <div class="form-group">
+                <div class="input-group">
+                    <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+                    <div class="input-group-btn">
+                    <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+                </div>
+            </form> 
+
+           <h1>Фильмы</h1>
+           <hr>
+          
+            <div class="row">
+                <div class="well clearfix">
+                    <div class="col-lg-3 col-md-2 text-center">
+                        <img class="img-thumbnail" src="/static/img/inter.png" alt="интерстеллар">
+                        <p>Интерстеллар</p>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <p>
+                            Когда засуха приводит человечество к продовольственному кризису, коллектив исследователей и учёных отправляется сквозь червоточину (которая предположительно соединяет области пространства-времени через большое расстояние) в путешествие, чтобы превзойти прежние ограничения для космических путешествий человека и переселить человечество на другую планету.
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <a href="/films/interstellar" class="btn btn-lg btn-warning pull-right">Детальнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="well clearfix">
+                    <div class="col-lg-3 col-md-2 text-center">
+                    <img class="img-thumbnail" src="/static/img/matrix.png" alt="матрица">
+                    <p>Матрица</p>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <p>
+                            Человечество спит в изолированных капсулах и служит чем-то вроде батареек для питания машин, захвативших власть на Земле. Наш ХХ век — это виртуальная реальность, по которой гуляют сознания нас же, только спящих. Вкус еды, цвета, чувства и проблемы — выдумка в компьютерной игре, чтобы людям-батарейкам интереснее спалось. Герой Кеану Ривза, продвинутый хакер, оказывается Избранным, чье призвание — всех разбудить.
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-lg btn-warning pull-right">Детальнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="well clearfix">
+                    <div class="col-lg-3 col-md-2 text-center">
+                    <img class="img-thumbnail" src="/static/img/max.png" alt="безумный макс">
+                    <p>Безумный Макс</p>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <p>
+                            В недалёком будущем, после крупной катастрофы, поразившей нашу урбанистическую цивилизацию, вся жизнь сосредоточилась вдоль бесчисленных магистралей. Дорога стала способом существования. И дала многим возможность проявлять свои самые жестокие инстинкты. Банда байкеров на мощных мотоциклах, желая рассчитаться за своего убитого товарища, преследует молодого полицейского Макса. Жертвой их мести становится лучший друг Макса, и та же участь грозит самому Максу и его семье...
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-lg btn-warning pull-right">Детальнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="well clearfix">
+                    <div class="col-lg-3 col-md-2 text-center">
+                    <img class="img-thumbnail" src="/static/img/cloud.png" alt="Облачный Атлас">
+                    <p>Облачный Атлас</p>
+                    </div>
+                    <div class="col-lg-9 col-md-10">
+                        <p>
+                        В основу историко-фантастического фильма «Облачный атлас» легла одноименная книга британского писателя Дэвида Митчелла, включенная в шортлист Букеровской премии. Режиссерам картины Лане Вачовски, Тому Тыкверу и Энди Вачовски удалось создать картину, которой на премьерном показе на кинофестивале в Торонто аплодировали стоя. Уловить и осознать все хитросплетения искусного кинополотна с одного просмотра получится не у каждого, даже очень внимательного зрителя.
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-lg btn-warning pull-right">Детальнее</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+{% endblock %}
