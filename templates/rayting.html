@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}Рейтинг фильмов{% endblock %}
+
+{% block menu %}
+
+	<ul class="nav nav-pills">
+                
+	    <li> <a href="/">Главная</a> </li>
+	    <li> <a href="/films">Фильмы</a> </li>
+	    <li> <a href="/sirials">Сериалы</a> </li>
+	    <li class="active"> <a href="/rating">Рейтинг фильмов</a> </li>
+	    <li> <a href="/contact">Контакты</a> </li>
+
+    </ul>
+
+{% endblock %}
+
+{% block content %}
+<div class="col-lg-9 col-lg-push-3"> <!-- Меняем блоки местами col-lg-push-3 -->
+
+          <form role="search" class="visible-xs">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+                <div class="input-group-btn">
+                  <button class="btn btn-default btn-lg" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </form> 
+
+          <h1>Рейтинг фильмов</h1>
+          
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th></th>
+                      <th class="vert-aling">Фильм</th>
+                      <th class="text-center">Год</th>
+                      <th class="text-center">Рейтинг</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td class="col-lg-1 col-md-1 col-xs-2">
+                          <img class="img-responsive img-thumbnail" src="/static/img/inter.png" alt="интерстеллар">
+                      </td>
+                      <td class="vert-aling"><a href="/films/interstellar">Интерстеллар</a></td>
+                      <td class="text-center vert-aling">2014</td>
+                      <td class="text-center vert-aling"><span class="badge">8.9</span></td>
+                  </tr>
+                  <tr>
+                    <td class="col-lg-1 col-md-1 col-xs-2">
+                        <img class="img-responsive img-thumbnail" src="/static/img/matrix.png" alt="матрица">
+                    </td>
+                    <td class="vert-aling"><a href="#">Матрица</a></td>
+                    <td class="text-center vert-aling">1999</td>
+                    <td class="text-center vert-aling"><span class="badge">8.1</span></td>
+                </tr>
+                <tr>
+                    <td class="col-lg-1 col-md-1 col-xs-2">
+                        <img class="img-responsive img-thumbnail" src="/static/img/max.png" alt="Безумный макс">
+                    </td>
+                    <td class="vert-aling"><a href="#">Безумный Макс</a></td>
+                    <td class="text-center vert-aling">2012</td>
+                    <td class="text-center vert-aling"><span class="badge">7.5</span></td>
+                </tr>
+                <tr>
+                    <td class="col-lg-1 col-md-1 col-xs-2">
+                        <img class="img-responsive img-thumbnail" src="/static/img/cloud.png" alt="облачный атлас">
+                    </td>
+                    <td class="vert-aling"><a href="#">Облачный Атлас</a></td>
+                    <td class="text-center vert-aling">2015</td>
+                    <td class="text-center vert-aling"><span class="badge">7.1</span></td>
+                </tr>
+              </tbody>
+          </table>
+
+        </div>
+{% endblock %}
